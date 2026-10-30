@@ -9,6 +9,7 @@ server {
     proxy_send_timeout 300s;
     proxy_set_header Connection "";
 
+    location = / { return 200 "ok"; }
     location = /health { return 200 "ok"; }
 
     # Telegram
